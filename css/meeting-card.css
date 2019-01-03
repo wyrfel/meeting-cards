@@ -1,0 +1,21 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3.8vw;
+    text-align: center;
+    padding: 5% 5%;
+}
+
+:host(.open) {
+    padding: 25% 10%;
+    font-size: 16.5vw;
+    line-height: 1.4;
+}
+
+img {
+    width: 70%;
+}
