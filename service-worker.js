@@ -1,5 +1,4 @@
-const dataCacheName = 'wyrfel-meeting-cards-data';
-const cacheName = 'wyrfel-meeting-cards';
+const cacheName = 'wyrfel-meeting-cards-v1';
 const filesToCache = [
     '/',
     '/index.html',
@@ -23,6 +22,7 @@ const filesToCache = [
     '/images/cards/mute.svg',
     '/images/cards/muted.svg',
     '/images/cards/no.svg',
+    '/images/cards/noise.svg',
     '/images/cards/onemin.svg',
     '/images/cards/pass.svg',
     '/images/cards/question.svg',

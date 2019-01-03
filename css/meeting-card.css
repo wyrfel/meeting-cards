@@ -7,15 +7,38 @@
     font-weight: bold;
     font-size: 3.8vw;
     text-align: center;
-    padding: 5% 5%;
+    padding: 2vh 2vw;
+}
+
+@media screen and (orientation: landscape) {
+    :host {
+        flex-direction: row;
+        font-size: 3.8vh;
+    }
 }
 
 :host(.open) {
-    padding: 25% 10%;
+    padding: 8vh 8vw;
     font-size: 16.5vw;
     line-height: 1.4;
+}
+
+@media screen and (orientation: landscape) {
+    :host(.open) {
+        flex-direction: row;
+        line-height: 1.2;
+        font-size: 12vw;
+    }
 }
 
 img {
     width: 70%;
 }
+
+@media screen and (orientation: landscape) {
+    img {
+        height: 70%;
+        width: auto;
+    }
+}
+
