@@ -12,7 +12,7 @@ meeting-cards {
   flex-wrap: wrap;
 }
 
-meeting-card {
+.card {
     width: 25vw;
     background: white;
     border-right: 1px solid black;
@@ -24,13 +24,13 @@ meeting-card {
 }
 
 @media screen and (orientation: landscape) {
-    meeting-card {
+    .card {
         height: 25vh;
         width: 25vw;
     }
 }
 
-meeting-card.open {
+.card.open {
     width: 100%;
     position: fixed;
     height: 100%;
@@ -38,18 +38,18 @@ meeting-card.open {
     left: 0;
 }
 
-meeting-card.green {
+.card.green {
     background-color: #c7de87;
 }
 
-meeting-card.red {
+.card.red {
     background-color: #fdc753;
 }
 
-meeting-card.blue {
+.card.blue {
     background-color: #b5d6ea;
 }
 
-meeting-card.yellow {
+.card.yellow {
     background-color: #efecc8;
 }

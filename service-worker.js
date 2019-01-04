@@ -1,9 +1,11 @@
-const cacheName = 'wyrfel-meeting-cards-v1';
+const cacheName = 'wyrfel-meeting-cards-v2';
 const filesToCache = [
     'index.html',
     'js/main.js',
     'js/MeetingCards.js',
     'js/MeetingCard.js',
+    'js/TimerCard.js',
+    'js/CountdownTimer.js',
     'css/styles.css',
     'css/meeting-card.css',
     'images/cards/awesome.svg',
