@@ -16,14 +16,26 @@ export default class MeetingCard extends HTMLElement {
         style.setAttribute('rel', 'stylesheet');
         style.setAttribute('href', 'css/meeting-card.css');
 
-        shadow.textContent = this.textContent;
-        shadow.appendChild(style);
+        this.buildContent(shadow);
         shadow.appendChild(image);
+        shadow.appendChild(style);
 
         this.addEventListener('click', this.handleClick);
     }
 
     handleClick(event) {
-        this.classList.toggle('open');
+        if (this.classList.toggle('open')) {
+            this.open();
+        } else {
+            this.close();
+        }
     }
+
+    buildContent(shadow) {
+        shadow.textContent = this.textContent;
+    }
+
+    open() {}
+
+    close() {}
 }
