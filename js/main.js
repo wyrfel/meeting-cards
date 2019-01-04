@@ -5,5 +5,5 @@ customElements.define('meeting-card', MeetingCard);
 customElements.define('meeting-cards', MeetingCards);
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js');
+    navigator.serviceWorker.register('service-worker.js');
 }

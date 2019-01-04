@@ -10,7 +10,7 @@ export default class MeetingCard extends HTMLElement {
         image.setAttribute('class', '');
 
         const type = this.getAttribute('type');
-        image.setAttribute('src', '/images/cards/' + type + '.svg');
+        image.setAttribute('src', 'images/cards/' + type + '.svg');
 
         const style = document.createElement('link');
         style.setAttribute('rel', 'stylesheet');
