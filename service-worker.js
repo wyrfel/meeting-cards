@@ -1,5 +1,6 @@
 const cacheName = 'wyrfel-meeting-cards-v2';
 const filesToCache = [
+    './',
     'index.html',
     'js/main.js',
     'js/MeetingCards.js',
