@@ -17,10 +17,13 @@ meeting-cards {
     background: white;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
-    box-sizing: border-box;
     height: 20vh;
-    background-image: repeating-radial-gradient(circle at 50% 70%, rgba(255, 255, 255, 0.05) 5%, transparent 20%, rgba(255, 255, 255, 0.15) 25%);
     overflow: hidden;
+}
+
+.card,
+info-card.open {
+    background-image: repeating-radial-gradient(circle at 50% 70%, rgba(255, 255, 255, 0.05) 5%, transparent 20%, rgba(255, 255, 255, 0.15) 25%);
 }
 
 @media screen and (orientation: landscape) {
@@ -30,7 +33,8 @@ meeting-cards {
     }
 }
 
-.card.open {
+.card.open,
+info-card.open {
     width: 100%;
     position: fixed;
     height: 100%;

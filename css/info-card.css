@@ -1,45 +1,49 @@
 :host{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 3.8vw;
     text-align: center;
     padding: 2vh 2vw;
     user-select: none;
+    background: #ddd;
     box-sizing: border-box;
 }
+
+:host .trigger {
+    display: block;
+}
+
+:host .info {
+    display: none;
+}
+
 
 @media screen and (orientation: landscape) {
     :host {
         flex-direction: row;
-        font-size: 3.8vh;
     }
 }
 
 :host(.open) {
-    padding: 8vh 8vw;
-    font-size: 16.5vw;
+    padding: 8vw;
     line-height: 1.4;
+}
+
+:host(.open) .trigger {
+    display: none;
+}
+
+:host(.open) .info {
+    display: block;
 }
 
 @media screen and (orientation: landscape) {
     :host(.open) {
+        padding: 8vh;
         line-height: 1.2;
-        font-size: 12vw;
-    }
-}
-
-img {
-    width: 70%;
-}
-
-@media screen and (orientation: landscape) {
-    img {
-        height: 70%;
-        width: auto;
     }
 }
 
