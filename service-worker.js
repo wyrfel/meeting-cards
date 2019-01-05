@@ -42,9 +42,12 @@ const filesToCache = [
 
 self.addEventListener('install', function(e) {
     e.waitUntil(
-        caches.open(cacheName).then(function(cache) {
-            return cache.addAll(filesToCache);
-        })
+        caches.open(cacheName)
+            .then(function(cache) {
+                return cache.addAll(filesToCache);
+            }).then(function() {
+                return self.skipWaiting();
+            })
     );
 });
 
